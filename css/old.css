@@ -1,0 +1,104 @@
+/* Accordion*/
+.accordion { 
+	margin-top: 2%;
+     width:60%;
+     height:auto;
+     overflow:hidden; 
+     background:#59B7FF; 
+     margin-right: 20%;
+     margin-left: 20%;
+     margin-bottom: 3%;
+     border-radius: 5px;
+}
+
+.accordion section{ 
+	border: 1px solid #0091FF;
+	     width:100%;
+      overflow:hidden; 
+      color:#000; 
+      background: #59B7FF; 
+       -webkit-user-select: auto;  /* Chrome all / Safari all */
+  -moz-user-select: auto;     /* Firefox all */
+  -o-user-select: auto;
+}
+.accordion section:hover {
+      background:#009628;
+}
+
+.accordion section p { 
+      display:block; 
+      font-size: 16px;
+}
+
+.accordion section:after{
+      position:relative;
+      font-size:20px;
+      color:#D3D3D3;
+      font-weight:bold;
+}
+/*Position the number of the slide*/
+.vertical section{ 
+     width:100%; 
+     height:60px; 
+}
+
+/*Set height of the slide*/
+.vertical section:target{ 
+	height: auto; 
+     width:100%;
+}
+
+.vertical section h2{ 
+		text-align: center;
+     position:relative; 
+     font-size:20px;
+}
+/*Set position of the number on the slide*/
+
+.accordion section:target { 
+	text-align: left;
+      background: #0091FF;
+}
+.accordion section:target:hover { 
+      background: #0091FF;
+}
+.accordion section:target h2 a{ 
+      color:white; 
+}
+.accordion section:target p {
+	      margin-left: 3%;
+	      margin-right: 3%;
+      display:block;
+      font-size: 20px;
+}
+.accordion section h2 a{
+      display:block; 
+      font-size:20px;
+      font-weight:normal;
+      color:#fff; 
+      text-decoration:none; 
+}
+
+
+#floatingbar{ 
+  position: fixed;
+ height:7%;
+ width:100%;
+ margin-left: -7px;
+background: #009628;
+ opacity:1;
+ z-index: 1000;
+ top: 93%;
+ bottom: 0%;
+ opacity: 0.3;
+
+ -webkit-transition: all 0.5s ease-out;
+-moz-transition: all 0.5s ease-out;
+-ms-transition: all 0.5s ease-out;
+-o-transition: all 0.5s ease-out;
+}
+
+#floatingbar:hover{ 
+
+ opacity: 0.9;
+}
