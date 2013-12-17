@@ -33,16 +33,16 @@ function validatePhone(evt) {
   var theEvent = evt || window.event;
   var key = theEvent.keyCode || theEvent.which;
   key = String.fromCharCode( key );
-  var regex = /[0-9]/;
+  var regex = /[0-9]|[\b]/;
   if( !regex.test(key) ) {
     theEvent.returnValue = false;
     if(theEvent.preventDefault) theEvent.preventDefault();
   }
   else{
-    if(document.getElementById("user_phone").value.length == 3)
+    if(document.getElementById("user_phone").value.length == 3 && theEvent.keyCode != 8)
       document.getElementById("user_phone").value = document.getElementById("user_phone").value + "-";
     }
-    if(document.getElementById("user_phone").value.length == 6){
+    if(document.getElementById("user_phone").value.length == 6 && theEvent.keyCode != 8){
       document.getElementById("user_phone").value = document.getElementById("user_phone").value + "-";
     }
 }
@@ -78,7 +78,7 @@ function validateName(evt, id) {
   var key = theEvent.keyCode || theEvent.which;
   key = String.fromCharCode( key );
 var regex_error = /[A-Z]|[a-z]|\{|\}|\[|\]|\:|\;|\"|\'|\<|\,|\>|\.|\||\\/;
-  var regex = /[А-Я]|[а-я]|[і]|[ї]|[І]|[Ї]|[Ґ]|\-/;
+  var regex = /[А-Я]|[а-я]|[і]|[ї]|[І]|[Ї]|[Ґ]|[\b]|\-/;
   var result = '';
   if(regex_error.test(key)){
      var A = {};
