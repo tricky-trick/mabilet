@@ -351,9 +351,9 @@ opacity: 0;
 margin-left: 90%;
 opacity: 0.7;
 }
-.modal:hover{
+/*.modal:hover{
   cursor: move;
-}
+}*/
 
 
 @media all and (orientation: landscape) {
