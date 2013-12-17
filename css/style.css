@@ -351,6 +351,9 @@ opacity: 0;
 margin-left: 90%;
 opacity: 0.7;
 }
+.modal:hover{
+  cursor: move;
+}
 
 
 @media all and (orientation: landscape) {
@@ -599,7 +602,7 @@ border-collapse:collapse;
   margin-left: 20%;
   margin-right: 22%;
   background: #CED8F6;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 }
 
@@ -637,6 +640,15 @@ padding: 7;
 }
 table td:nth-child(6){
     text-align: left;
+}
+table tr{
+      -webkit-transition: all 0.3s ease-out;
+-moz-transition: all 0.3s ease-out;
+-ms-transition: all 0.3s ease-out;
+-o-transition: all 0.3s ease-out;
+}
+table tr:hover{
+  background: #DDE4F9;
 }
 .tooltip{
       color: black;
