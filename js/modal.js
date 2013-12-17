@@ -1,7 +1,7 @@
 	$(document).ready(function(){
-		 	 $(".modal").each(function(){
+		 	/* $(".modal").each(function(){
 		    		$(this).draggable();
-		  });
+		  });*/
 
 		$("#register, #registerAuth").click(function() {
 				var marginTop = $(document).scrollTop();
