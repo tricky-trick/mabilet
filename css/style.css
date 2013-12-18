@@ -151,35 +151,40 @@ font: 20px Verdana,Helvetica;
 @media all and (orientation: landscape) {
 #headblock{
   position: fixed;
-  right: 15px;
+  right: 1%;
   margin-top: -8%;
   height: 40px;
-    width:auto;
-color: #404040;
-font-weight: 100;
-text-decoration:none;
+  width:auto;
+  font-weight: 100;
+  text-decoration:none;
 }
 #how_to, #contacts, #register{
   text-decoration: none;
   cursor: pointer;
-  color:#404040;
-  font: 14px arial,sans-serif;
+  color: #404040;
+  font: 16px arial,sans-serif;
 }
 
 #how_to:hover, #contacts:hover, #register:hover{
 text-decoration: underline;
+color: black;
 }}
 
 @media all and (orientation: landscape) and (max-width: 1300px) {
-#register{
+#headblock{
   position: fixed;
-  right: 4px;
-  margin-top: -10%;
+  right: 1%;
+  margin-top: -8%;
   height: 40px;
-    width:auto;
-color: gray;
-font-size: 20px;
-font-weight: 100;
+  width:auto;
+  font-weight: 100;
+  text-decoration:none;
+}
+#how_to, #contacts, #register{
+  text-decoration: none;
+  cursor: pointer;
+  color: #404040;
+  font: 16px arial,sans-serif;
 }
 }
 
@@ -659,7 +664,7 @@ table tr:hover{
   margin-right: 30%;
   height: auto;
   max-height: 40%;
-  background-color: #E3F8FE;
+  background-color: honeydew;
   border-radius: 10px;
   padding-top: 10px;
   margin-top: 20px;
