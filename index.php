@@ -204,6 +204,21 @@ setcookie("trainWelcomeFrame","Hello!", time() + 3600*24*365);
            </div> 
 
     </div>
+    <?php
+if (!isset($_COOKIE['trainWelcomeFrame'])) {
+?>
+	<div id="modalWelcome" class="modal">
+        <a href class="closeModal" id="closeWelcome"><img src="img/close.png"></a>
+        <h3 style="width:100%; text-align:center;">Вітаємо на maBilet!</h3>
+        <p style="width:90%; margin-left:8%; font-size: 16px;">Ви потрапили на перший в Україні "правильний" ресурс пошуку поїздів.<br><br>
+Чому правильний? Тому що ми шукаємо поїзди замість Вас :) <br><br>
+У нас тільки одне правило - Ви створюєте своє "квиткове побажання", а ми подбаєм про те, щоб воно було знайдено у найкоротші терміни. <br><br>
+Отже, вперед!</p>
+
+    </div>
+    <?php
+}
+?>
 
 
 <div id="headblock">
@@ -336,21 +351,6 @@ setcookie("trainWelcomeFrame","Hello!", time() + 3600*24*365);
 		<input name="ok" id="ok" type="submit" value="Знайти квиток"/>
 	</div>
 	<img id="ajax-loader" src="img/ajax-loader.gif">
-<?php
-if (!isset($_COOKIE['trainWelcomeFrame'])) {
-?>
-	<div id="modalWelcome" class="modal">
-        <a href class="closeModal" id="closeWelcome"><img src="img/close.png"></a>
-        <h3 style="width:100%; text-align:center;">Вітаємо на maBilet!</h3>
-        <p style="width:90%; margin-left:8%; font-size: 18px;">Ви потрапили на перший в Україні "правильний" ресурс пошуку поїздів.<br><br>
-Чому правильний? Тому що ми шукаємо поїзди замість Вас :) <br><br>
-У нас тільки одне правило - Ви створюєте своє "квиткове побажання", а ми подбаєм про те, щоб воно було знайдено у найкоротші терміни. <br><br>
-Отже, вперед!</p>
-
-    </div>
-    <?php
-}
-?>
 	<div id="out">
 	</div>
 	<br>
