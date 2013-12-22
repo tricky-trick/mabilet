@@ -239,19 +239,18 @@ margin-bottom: 10px;
 }
 
 @media all and (orientation: portrait) {
-#getAuth{
-  font-size: 24px;
-    width:60%;
-    margin-left: 20%;
-    height: 50px;
+ #getAuth{
+    width:80%;
+    margin-left: 10%;
+    height: 40px;
 margin-bottom: 10px;
       background-color: #ffffff;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(red ));
-  background-image: -webkit-linear-gradient(top, #ffffff, red );
-  background-image:    -moz-linear-gradient(top, #ffffff, red );
-  background-image:      -o-linear-gradient(top, #ffffff, red );
-  background-image:         linear-gradient(to bottom, #ffffff, red );
-}
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#87C49B ));
+  background-image: -webkit-linear-gradient(top, #ffffff, #87C49B );
+  background-image:    -moz-linear-gradient(top, #ffffff, #87C49B );
+  background-image:      -o-linear-gradient(top, #ffffff, #87C49B );
+  background-image:         linear-gradient(to bottom, #ffffff, #87C49B );
+} 
 }
 
 #change{
