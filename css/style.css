@@ -13,8 +13,6 @@ html{
 .group { 
 	display:inline-block; 
 	width: 46%;
-	margin-left: 1%;
-	margin-right: 1%;
 	font-size: 18px;
 }
 }
@@ -29,8 +27,6 @@ html{
 .group { 
   display:inline-block; 
   width: 44.5%;
-  margin-left: 1%;
-  margin-right: 1%;
   font-size: 18px;
 }
 }
@@ -164,11 +160,7 @@ font: 20px Verdana,Helvetica;
   color: #404040;
   font: 16px arial,sans-serif;
 }
-
-#how_to:hover, #contacts:hover, #register:hover{
-text-decoration: underline;
-color: black;
-}}
+}
 
 @media all and (orientation: landscape) and (max-width: 1300px) {
 #headblock{
@@ -189,18 +181,27 @@ color: black;
 }
 
 @media all and (orientation: portrait) {
-#register{
+#headblock{
   position: fixed;
-  right: 4px;
+  right: 1%;
   margin-top: -8%;
   height: 40px;
-    width:auto;
-color: gray;
-font-size: 20px;
-font-weight: 100;
+  width:auto;
+  font-weight: 100;
+  text-decoration:none;
+}
+#how_to, #contacts, #register{
+  text-decoration: none;
+  cursor: pointer;
+  color: #404040;
+  font: 16px arial,sans-serif;
 }
 }
 
+#how_to:hover, #contacts:hover, #register:hover{
+text-decoration: underline;
+color: black;
+}
 
 
 @media all and (orientation: landscape) {
