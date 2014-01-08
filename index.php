@@ -239,7 +239,7 @@ if (!isset($_COOKIE['trainWelcomeFrame'])) {
 		<br>
 		<br>
 		<select id = "placetype">
-		  <option value="0" selected>Все</option>
+		  <option value="0" selected>Любий тип вагону</option>
 		  <option value="1">Люкс</option>
 		  <option value="2">Купе</option>
 		  <option value="3">Плацкарт</option>
