@@ -2,6 +2,25 @@ jQuery(document).ready(function(){
 
 			$('#stfrom').autocomplete({source:'auto.php', minLength:2});
 			$('#stto').autocomplete({source:'auto.php', minLength:2});
+
+      $("#stfrom").focusout(function(){
+        if($(".ui-menu-item").size() == 1)
+        {
+          var val = $(".ui-menu-item").text();
+          $(this).val(val);
+          $(".ui-menu-item").remove();
+        }
+      });
+
+      $("#stto").focusout(function(){
+        if($(".ui-menu-item").size() == 1)
+        {
+          var val = $(".ui-menu-item").text();
+          $(this).val(val);
+          $(".ui-menu-item").remove();
+        }
+      });
+
 			var marg = $('#stfrom').height();
 			$('.ui-menu').css('margin-top',(marg-10));
 					$( "#datepicker" ).val($.datepicker.formatDate('dd-mm-yy', new Date()));
@@ -101,4 +120,6 @@ result = document.getElementById(id).value + A[key];
     if(theEvent.preventDefault) theEvent.preventDefault();
   }
   document.getElementById(id).value = result;
+
+
 }

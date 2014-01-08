@@ -7,7 +7,9 @@ html{
       margin-left:1.5%;
       }
           
-  li.ui-menu-item { font-size:12px; text-align: left;}
+  li.ui-menu-item { font-size:20px; text-align: left; }
+
+
 
 @media all and (orientation: landscape) and (max-width: 1300px) {
 .group { 
