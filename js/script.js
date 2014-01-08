@@ -120,6 +120,11 @@ result = document.getElementById(id).value + A[key];
     if(theEvent.preventDefault) theEvent.preventDefault();
   }
   document.getElementById(id).value = result;
-
+if($(".ui-menu-item").size() == 1)
+        {
+          var val = $(".ui-menu-item").text();
+          document.getElementById(id).value = val;
+          $(".ui-menu-item").remove();
+        }
 
 }
