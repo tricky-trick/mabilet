@@ -20,8 +20,8 @@ $(document).ready(function(){
                else
                {
                var gifimg = $("#ajax-loader");
-               var stfrom = $("#stfrom").attr("value").split(":")[1].replace(" ", "");
-               var stto = $("#stto").attr("value").split(":")[1].replace(" ", "");
+               var stfrom = $("#stfrom").attr("value").split(":")[1].replace(" ", "").substring(0,7);
+               var stto = $("#stto").attr("value").split(":")[1].replace(" ", "").substring(0,7);
                var name_stfrom = $("#stfrom").attr("value").split(":")[0].replace(" ", "");
                var name_stto = $("#stto").attr("value").split(":")[0].replace(" ", "");
                var date = $("#datepicker").attr("value");
